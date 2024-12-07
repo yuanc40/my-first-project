@@ -1,0 +1,26 @@
+/*lethead1.c 打印表头*/
+#include <stdio.h>
+#define NAME "Yuan C"
+#define ADDRESS "101 Meg Pla"
+#define PLACE "Meg, CA 94904"
+
+void starbar(void);//函数声明，打印40个*（星号）的函数
+
+int main(void)
+{
+  starbar();
+  printf("%s\n",NAME);
+  printf("%s\n",ADDRESS);
+  printf("%s\n",PLACE);
+  starbar();
+
+  return 0;
+}
+
+void starbar(void)   /*定义函数*/
+{
+  int count;
+  for(count=1; count <= 40; count++)
+    putchar('*');
+  putchar('\n');
+}
